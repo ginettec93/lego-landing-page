@@ -69,7 +69,6 @@ body {
         visibility: hidden;
     }
 }
-
 @keyframes scaling {
     0% {
         transform: scale(0.2);
@@ -106,6 +105,7 @@ body {
         transform: translateY(0px);
     }
 }
+
 .navbar__content img {
     width: 50px;
 }
@@ -120,4 +120,10 @@ body {
     color: var(--red);
     font-weight: 300;
     text-decoration: none;
+}
+.main-content {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+
 }
