@@ -3,6 +3,14 @@ body {
     margin: 0;
     overflow: hidden;
 }
+.page {
+    position: relative;
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    z-index: 1;
+}
 .loader {
     background: white;
     width: 100%;
