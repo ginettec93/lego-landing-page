@@ -1,7 +1,13 @@
+--root {
+    --yellow: #FFCF00;
+    --blue: #002E45;
+    --red: #D01012;
+}
 body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    font-family: 'Harry Potter', sans-serif;
 }
 .page {
     position: relative;
@@ -10,6 +16,14 @@ body {
 .container {
     position: absolute;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "nav     aside"
+                         "section aside"
+                         "footer  aside";
+    height: 100%;
+    width: 100%;
 }
 .loader {
     background: white;
