@@ -1,4 +1,4 @@
---root {
+:root {
     --yellow: #FFCF00;
     --blue: #002E45;
     --red: #D01012;
@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    font-family: 'Harry Potter', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .page {
     position: relative;
@@ -37,7 +37,7 @@ body {
     animation: loader 2s linear forwards;
 }
 .loader div {
-    background: palevioletred;
+    background: var(--yellow);
     width: 40px;
     height: 40px;
     margin: 10px;
@@ -89,14 +89,35 @@ body {
 }
 
 .navbar {
-    background: lightcoral;
     grid-area: nav;
 }
 .navbar__content {
     display: flex;
     align-items: center;
     padding: 0 0 0 80px;
+    animation: 2s navbar 0.5s ease-in-out;
+}
+
+@keyframes navbar {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 .navbar__content img {
     width: 50px;
+}
+.navbar__content ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    width: 450px;
+}
+.navbar__content ul li a {
+    color: var(--red);
+    font-weight: 300;
+    text-decoration: none;
 }
