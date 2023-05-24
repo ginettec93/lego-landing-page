@@ -20,4 +20,26 @@ body {
     justify-content: center;
     position: absolute;
     z-index: 3;
+    animation: loader 2s linear forwards;
+}
+.loader div {
+    background: palevioletred;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    95% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
