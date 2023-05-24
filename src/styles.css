@@ -59,7 +59,6 @@ body {
 .loader div:nth-child(3){
     animation-delay: 0.6s;
 }
-
 @keyframes loader {
     0% {
         opacity: 1;
@@ -91,7 +90,6 @@ body {
         transform: scale(0.2);
     }
 }
-
 .navbar {
     grid-area: nav;
     display: flex;
@@ -102,7 +100,6 @@ body {
     padding: 0 0 0 80px;
     animation: 2s navbar 0.5s ease-in-out;
 }
-
 @keyframes navbar {
     0% {
         transform: translateY(-200px);
@@ -111,7 +108,6 @@ body {
         transform: translateY(0px);
     }
 }
-
 .navbar__content img {
     width: 50px;
 }
@@ -151,8 +147,6 @@ body {
     margin: 0;
     width: 60%;
 }
-
-
 @keyframes main-content {
     0% {
         transform: translateY(-800px);
@@ -160,4 +154,11 @@ body {
     100% {
         transform: translateY(0px);
     }
+}
+.side-content {
+    background: palegreen;
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+    align-items: center;
+    grid-area: aside;
 }
