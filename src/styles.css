@@ -3,6 +3,11 @@
     --blue: #002E45;
     --red: #D01012;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     height: 100vh;
     margin: 0;
@@ -125,5 +130,14 @@ body {
     grid-area: section;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    animation: 2s main-content 0.5s ease-in-out;
+}
+@keyframes main-content {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
