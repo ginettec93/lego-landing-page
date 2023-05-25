@@ -3,6 +3,11 @@
     --blue: #002E45;
     --red: #D01012;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     height: 100vh;
     margin: 0;
@@ -135,7 +140,7 @@ body {
 .main-content h1 {
     font-size: 48px;
     font-weight: 700;
-    margin: 0 0 28px 0;
+    margin: 10px 0 28px 0;
 }
 .main-content p:last-child {
     font-size: 30px;
@@ -227,6 +232,23 @@ body {
         transform: translateY(0px);
     }
 }
-.footer div img:nth-child(1) {
-    width: 160px;
+.footer div {
+    background: var(--blue);
+    width: 150px;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.footer div:hover img {
+    cursor: pointer;
+    transform: translateY(-20px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.footer div img {
+    width: 180px;
+    position: absolute;
+    bottom: 30px;
+    transform: translateY(20px) scale(1);
+    transition: transform 0.5s ease-in-out;
 }
