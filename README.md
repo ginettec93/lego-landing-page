@@ -1,2 +1,2 @@
 # lego-landing-page
-A website for practice CSS with animations and JavaScript. 
+A website to practice CSS with animations and JavaScript. This website shows interactions with CSS animations and JavaScript by inspiring Harry Potter's World and Funko Pop toys. 
