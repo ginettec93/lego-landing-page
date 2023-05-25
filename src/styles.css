@@ -209,6 +209,7 @@ body {
     background: var(--yellow);
     border-radius: 0 50px 0 0;
     transform: translate(100%);
+    opacity: 0;
 
     animation-name: footer;
     animation-duration: 0.5s;
@@ -218,9 +219,14 @@ body {
 }
 @keyframes footer {
     0% {
+        opacity: 0;
         transform: translateY(100%);
     }
     100% {
+        opacity: 1;
         transform: translateY(0px);
     }
+}
+.footer div img:nth-child(1) {
+    width: 160px;
 }
