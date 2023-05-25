@@ -1,7 +1,7 @@
 {
   "name": "lego-landing-page",
   "version": "1.0.0",
-  "description": "A website for practice CSS with animations and JavaScript.",
+  "description": "A website to practice CSS with animations and JavaScript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
