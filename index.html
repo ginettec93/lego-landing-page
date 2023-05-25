@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <title>Funko Pop!</title>
+</head>
+<body>
+    <div class="page">
+        <!-- main-content -->
+        <section class="container">
+            <nav class="navbar">
+                <div class="navbar__content">
+                    <img src="https://vignette.wikia.nocookie.net/funko/images/7/7b/Pop-logo.png/revision/latest?cb=20130305201121" alt="logo">
+                    <ul>
+                        <li><a href="/">EXCLUSIVE</a></li>
+                        <li><a href="/">NEW</a></li>
+                        <li><a href="/">GIFTCARDS</a></li>
+                        <li><a href="/">FIND A STORE</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="main-content">
+                <p>Create your favorite</p>
+                <h1>Harry Potter Character!</h1>
+                <p>With our incredible tools you can now create your own Funko Pop character from Harry Potter's universe. Welcome to our Magic Kingdom and enjoy this magical experience!</p>
+            </section>
+
+            <section class="side-content">
+                <p>Dobby</p>
+                <img src="./images/dobby-the-house-elf-lord-voldemort-funko-action-toy-figures-luna-lovegood-harry-potter-removebg-preview.png" alt="Dobby">
+                <div></div>
+            </section>
+
+            <section class="footer">
+                <div class="buttonImage" id="button1">
+                    <img src="./images/draco1-removebg-preview.png" alt="Draco Malfoy">
+                </div>
+                <div class="buttonImage" id="button2">
+                    <img src="./images/hp-removebg-preview.png" alt="Harry Potter">
+                </div>
+                <div class="buttonImage" id="button3">
+                    <img src="./images/hagrid2-removebg-preview.png" alt="Hagrid">
+                </div>
+            </section>
+
+        </section>      
+        <!-- loader -->
+        <section class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>       
+        <!-- modal -->
+        <section class="modal hidden">
+            <div class="modal-content">
+                <img src="./images/close.png" alt="close button" class="close-button">
+                
+                <div class="modal-content-slider">
+                    <input type="radio" name="slider-1" id="radio-1" checked>
+                    <input type="radio" name="slider-1" id="radio-2">
+                    <input type="radio" name="slider-1" id="radio-3">
+
+                    <div class="cards">
+                        <label for="radio-1" id="card-1" class="card">
+                            <img src="./images/draco1-removebg-preview.png" alt="Draco Malfoy" class="image-1">
+                        </label>
+                        <label for="radio-2" id="card-2" class="card">
+                            <img src="./images/draco1-removebg-preview.png" alt="Draco Malfoy" class="image-1">
+                        </label>
+                        <label for="radio-3" id="card-3" class="card">
+                            <img src="./images/draco1-removebg-preview.png" alt="Draco Malfoy" class="image-1">
+                        </label>
+                    </div>
+
+                    <div>
+                        <button>I want it!</button>
+                    </div>
+
+                </div>
+
+                </div>
+                </div>
+            </div>
+        </section>                   
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
